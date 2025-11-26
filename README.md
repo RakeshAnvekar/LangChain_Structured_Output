@@ -50,7 +50,8 @@ format**.
 
 This is **structured output** --- the data follows a predictable
 format.\
-It becomes easy to: - Parse\
+It becomes easy to: 
+- Parse\
 - Save\
 - Validate\
 - Send to other systems
