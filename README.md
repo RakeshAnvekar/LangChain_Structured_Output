@@ -155,7 +155,8 @@ Passed directly to a calculator tool.
 
 ## 1️⃣ LLMs That Natively Support Structured Output
 
-Examples: - GPT-4 / GPT-4o / GPT-5\
+Examples: 
+- GPT-4 / GPT-4o / GPT-5
 - Claude 3
 
 They directly understand: 
