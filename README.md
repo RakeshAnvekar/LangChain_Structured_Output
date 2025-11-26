@@ -242,18 +242,4 @@ Used when both backend and frontend need shared validation rules.
 
 ------------------------------------------------------------------------
 
-# 🧩 When to Use What?
 
-  Tool          Use Case
-  ------------- --------------------------------------
-  TypedDict     Only type hints
-  Pydantic      Full validation & constraints
-  JSON Schema   Shared backend + frontend validation
-
-------------------------------------------------------------------------
-
-# ✅ Final Takeaway
-
--   **Unstructured Output** → Human friendly\
--   **Structured Output** → Machine friendly\
--   **Structured output is mandatory for production AI systems**
