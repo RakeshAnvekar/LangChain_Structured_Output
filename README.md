@@ -1,4 +1,4 @@
-# 📘 Structured Output vs Unstructured Output (Polished Explanation)
+# 📘 Structured Output vs Unstructured Output
 
 Large Language Models (LLMs) process a given prompt and return a
 response. By default, this response is usually **plain text**, which is
