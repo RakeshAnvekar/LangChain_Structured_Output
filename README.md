@@ -241,5 +241,26 @@ Used when both backend and frontend need shared validation rules.
 ✅ Cross-platform compatible
 
 ------------------------------------------------------------------------
+# ✅ Typed dictionary example
+This example uses TypedDict to define a fixed structure for a dictionary with specific keys and data types.
+It helps catch type mismatches (like passing a string instead of an integer) during development using IDEs and type checkers.
+At runtime, the object remains a normal Python dictionary without automatic validation.
+<img width="1014" height="562" alt="image" src="https://github.com/user-attachments/assets/23043038-35a7-407d-a131-54210f5efa25" />
+<img width="1018" height="556" alt="image" src="https://github.com/user-attachments/assets/81147ff6-35cb-4527-9823-f2d1001bb630" />
+# ✅ Annotated example
+Annotated is used to attach additional metadata or descriptions to a type without changing its actual data type.
+It is especially useful for LLM structured outputs to add human-readable field explanations.
+<img width="1023" height="549" alt="image" src="https://github.com/user-attachments/assets/1b80f81b-be9d-47f7-b6b3-9555cb4b8e94" />
+# ✅ Annotated With Optional example
+Annotated[Optional[T], "..."] means the field is not mandatory and can be either a value of type T or None.
+It is used when some structured output fields (like pros or cons) may or may not appear in the LLM response.
+<img width="1021" height="603" alt="image" src="https://github.com/user-attachments/assets/6f02baaa-7722-4514-a90f-212da85c75cd" />
+# ✅ Literal
+Literal restricts a variable to only specific allowed values (e.g., "positive", "negative", "mixed").
+It ensures the LLM output or data cannot contain any value outside the predefined options, improving validation and reliability.
+<img width="1021" height="545" alt="image" src="https://github.com/user-attachments/assets/482cf322-d995-4841-bdd7-b6676f2a3dc8" />
+
+
+
 
 
