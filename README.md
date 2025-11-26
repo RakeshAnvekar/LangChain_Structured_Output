@@ -63,9 +63,9 @@ It becomes easy to:
 In **LangChain**, structured output refers to the practice of
 instructing the LLM to return responses in formats such as:
 
--   JSON\
--   Pydantic Models\
--   Dictionaries\
+-   JSON
+-   Pydantic Models
+-   Dictionaries
 -   Enums / Typed Fields
 
 This makes programmatic handling of LLM output much easier.
