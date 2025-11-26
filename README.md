@@ -17,7 +17,7 @@ fixed structure.
 
 ### ✅ Example (Unstructured Response)
 
-**Prompt:**\
+**Prompt:**
 "Can you create a one-day travel itinerary for Paris?"
 
 **LLM Response:**
@@ -49,11 +49,11 @@ format**.
 ```
 
 This is **structured output** --- the data follows a predictable
-format.\
+format.
 It becomes easy to: 
-- Parse\
-- Save\
-- Validate\
+- Parse
+- Save
+- Validate
 - Send to other systems
 
 ------------------------------------------------------------------------
@@ -77,10 +77,10 @@ This makes programmatic handling of LLM output much easier.
 LLMs naturally output text, which is flexible but hard to use directly
 with:
 
--   Databases\
--   External tools\
--   APIs\
--   Microservices\
+-   Databases
+-   External tools
+-   APIs
+-   Microservices
 -   Calculators or code execution tools
 
 Structured output forces the LLM to provide responses in a
@@ -95,11 +95,12 @@ with other systems.
 
 You can extract specific fields and store them in a database.
 
-**Example:** Resume Parsing\
-Extract: - Name\
-- Skills\
-- Address\
-- Email\
+**Example:** Resume Parsing
+Extract: 
+- Name
+- Skills
+- Address
+- Email
 - Last Company
 
 All returned in **structured JSON** and saved in the DB.
@@ -110,10 +111,11 @@ All returned in **structured JSON** and saved in the DB.
 
 **Example:** Amazon Product Reviews
 
-Unstructured reviews become: - Topic\
-- Pros\
-- Cons\
-- Sentiment\
+Unstructured reviews become: 
+- Topic
+- Pros
+- Cons
+- Sentiment
 - Summary
 
 Used for storage and analytics.
@@ -139,10 +141,10 @@ Passed directly to a calculator tool.
 -   LLMs naturally return unstructured text.
 -   Systems need structured data.
 -   Structured output enables:
-    -   Databases\
-    -   APIs\
-    -   Automation\
-    -   Tools\
+    -   Databases
+    -   APIs
+    -   Automation
+    -   Tools
     -   Agents
 
 👉 **Essential for production-grade AI systems.**
@@ -156,8 +158,9 @@ Passed directly to a calculator tool.
 Examples: - GPT-4 / GPT-4o / GPT-5\
 - Claude 3
 
-They directly understand: - JSON\
-- Schemas\
+They directly understand: 
+- JSON
+- Schemas
 - Typed objects
 
 ``` python
@@ -173,8 +176,8 @@ Older and smaller models only return text.
 
 ### ✅ Solution: Output Parsers
 
--   JsonOutputParser\
--   PydanticOutputParser\
+-   JsonOutputParser
+-   PydanticOutputParser
 -   StructuredOutputParser
 
 ``` python
@@ -188,8 +191,8 @@ prompt = parser.get_format_instructions()
 
 TypedDict defines dictionary keys and types at development time.
 
-✅ Type safety\
-✅ IDE hinting\
+✅ Type safety
+✅ IDE hinting
 ❌ No runtime validation
 
 ``` python
@@ -218,10 +221,10 @@ class Review(TypedDict):
 
 Pydantic is a **data validation library** for Python.
 
--   Runtime validation\
--   Default values\
--   Optional fields\
--   Type conversion\
+-   Runtime validation
+-   Default values
+-   Optional fields
+-   Type conversion
 -   Regex & constraints
 
 ✅ Best for **production validation**
@@ -232,8 +235,8 @@ Pydantic is a **data validation library** for Python.
 
 Used when both backend and frontend need shared validation rules.
 
-✅ Universal format\
-✅ No Python dependency\
+✅ Universal format
+✅ No Python dependency
 ✅ Cross-platform compatible
 
 ------------------------------------------------------------------------
